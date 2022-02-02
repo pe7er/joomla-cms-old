@@ -144,8 +144,6 @@ if ($clientId === 1)
 						'menuordering',
 						'published',
 						'home',
-						'publish_up',
-						'publish_down',
 						'access',
 						'language',
 						'note',

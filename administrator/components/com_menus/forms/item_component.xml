@@ -89,6 +89,28 @@
 				validate="CssIdentifier"
 			/>
 
+			<field
+					name="publish_up"
+					type="calendar"
+					label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+					translateformat="true"
+					showtime="true"
+					size="22"
+					filter="user_utc"
+					showon="home:0"
+			/>
+
+			<field
+					name="publish_down"
+					type="calendar"
+					label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+					translateformat="true"
+					showtime="true"
+					size="22"
+					filter="user_utc"
+					showon="home:0"
+			/>
+
 		</fieldset>
 
 		<fieldset name="metadata" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
