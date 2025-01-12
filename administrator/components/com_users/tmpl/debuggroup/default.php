@@ -24,6 +24,10 @@ $listDirn  = $this->escape($this->state->get('list.direction'));
 $wa = $this->getDocument()->getWebAssetManager();
 $wa->useScript('table.columns');
 
+// Check if $actions is defined; initialize if not
+if (!isset($actions) || !is_array($actions)) {
+    $actions = [];
+}
 ?>
 <form action="<?php echo Route::_('index.php?option=com_users&view=debuggroup&group_id=' . (int) $this->state->get('group_id')); ?>" method="post" name="adminForm" id="adminForm">
     <div id="j-main-container" class="j-main-container">
