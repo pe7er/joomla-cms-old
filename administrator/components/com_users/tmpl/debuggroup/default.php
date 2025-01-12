@@ -23,7 +23,7 @@ $listDirn  = $this->escape($this->state->get('list.direction'));
 /** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
 $wa = $this->getDocument()->getWebAssetManager();
 $wa->useScript('table.columns');
-
+$loginActions = [];
 ?>
 <form action="<?php echo Route::_('index.php?option=com_users&view=debuggroup&group_id=' . (int) $this->state->get('group_id')); ?>" method="post" name="adminForm" id="adminForm">
     <div id="j-main-container" class="j-main-container">
